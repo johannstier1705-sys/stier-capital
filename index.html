@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="Stier Capital — soluções em consórcio para planejar a conquista de imóveis, veículos e objetivos patrimoniais.">
+<title>Stier Capital | Seu próximo patrimônio começa com planejamento</title>
+<style>
+:root{--black:#08090b;--gold:#cda263;--gold2:#e6c38a;--white:#f5f4f1;--muted:#c3c2c0;--line:rgba(230,195,138,.34);--max:1570px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 64px));margin:auto}
+header{position:absolute;top:0;left:0;right:0;z-index:5;border-bottom:1px solid rgba(255,255,255,.07);background:linear-gradient(180deg,rgba(0,0,0,.48),transparent)}
+.nav{height:98px;display:flex;align-items:center;justify-content:space-between;gap:30px}.logo{display:block;width:270px;max-width:24vw;height:auto}.navlinks{display:flex;gap:clamp(18px,3vw,52px);align-items:center;font-size:13px;text-transform:uppercase;letter-spacing:.04em}.navlinks a{padding:12px 0;color:#e3e1dd}.navlinks a:first-child,.navlinks a:hover{color:var(--gold2)}.navbtn{border:1px solid var(--gold);border-radius:40px;padding:13px 22px;font-size:12px;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:linear-gradient(100deg,#e8c486,#b88a4b);color:#17120b;border:1px solid #d9b477;border-radius:40px;padding:17px 29px;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;transition:.2s}.btn:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.hero{min-height:820px;position:relative;display:flex;align-items:center;overflow:hidden;background:#08090b url("stier-hero.jpg") center right/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#08090b 0%,rgba(8,9,11,.97) 21%,rgba(8,9,11,.76) 43%,rgba(8,9,11,.12) 78%,rgba(8,9,11,.3) 100%),linear-gradient(0deg,#08090b 0%,transparent 28%,rgba(0,0,0,.2) 100%)}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.45}
+.hero-inner{position:relative;z-index:1;padding:155px 0 40px;max-width:var(--max);width:min(var(--max),calc(100% - 64px));margin:auto}
+.kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:#d6d4d0;margin-bottom:24px}
+h1{font-size:clamp(42px,5.1vw,76px);line-height:1.12;letter-spacing:-.035em;font-weight:400;max-width:900px;margin:0 0 24px}h1 span{display:block;color:var(--gold2)}.intro{font-size:18px;color:#e0dfdc;max-width:600px;line-height:1.6;margin:0 0 34px}
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:78px;max-width:1110px}
+.service{padding:0 26px;border-right:1px solid rgba(255,255,255,.35)}.service:first-child{padding-left:0}.service:last-child{border-right:0}.service-icon{color:var(--gold);font-size:28px;line-height:1;margin-bottom:14px}.service h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px;font-weight:700}.service p{font-size:12px;color:#d0cfcc;line-height:1.5;margin:0}
+.corner-note{position:absolute;right:5%;bottom:38px;z-index:2;color:var(--gold2);font-size:11px;letter-spacing:.19em;text-transform:uppercase;text-align:right}
+section.content{padding:100px 0;background:#0b0c0f}.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2)}h2{font-size:clamp(30px,4vw,48px);line-height:1.15;font-weight:400;letter-spacing:-.025em;margin:15px 0 18px}.section-lead{color:var(--muted);max-width:700px;font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}.card{padding:30px;background:linear-gradient(145deg,#18191c,#0e0f12);border:1px solid rgba(205,162,99,.24);min-height:225px}.card .index{color:var(--gold);font-size:11px;letter-spacing:.18em}.card h3{font-size:22px;font-weight:400;margin:18px 0 10px}.card p{font-size:14px;color:var(--muted);margin:0 0 20px}.textlink{font-size:12px;color:var(--gold2);letter-spacing:.08em;text-transform:uppercase}
+.about{background:#111216!important;border-block:1px solid rgba(255,255,255,.07)}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.steps{border-top:1px solid var(--line)}.step{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.step span{color:var(--gold);font-size:13px}.step b{display:block;margin-bottom:5px}.step p{color:var(--muted);font-size:14px;margin:0}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:55px;border:1px solid var(--line);background:radial-gradient(ellipse at 90% 20%,rgba(205,162,99,.13),transparent 45%),#111216}
+.faq{max-width:900px;margin-top:35px}details{border-top:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);font-size:14px;margin-bottom:0}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px}.contact p{color:var(--muted)}form{padding:30px;border:1px solid var(--line);background:#111216;display:grid;gap:16px}label{display:grid;gap:7px;color:#dcdad6;font-size:12px}input,select,textarea{background:#090a0c;border:1px solid #383632;color:#fff;padding:13px;font:inherit;font-size:14px;width:100%;border-radius:2px}input:focus,select:focus,textarea:focus{outline:1px solid var(--gold)}.fine{font-size:11px!important;color:#96948f!important;line-height:1.6}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#aaa7a1;font-size:11px}.foot{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}.foot p{max-width:750px;margin:0}.mobilebar{display:none}
+@media(max-width:900px){.wrap,.hero-inner{width:calc(100% - 38px)}.nav{height:78px}.logo{width:205px;max-width:42vw}.navlinks{display:none}.navbtn{font-size:10px;padding:11px 14px}.hero{min-height:870px;background-position:62% center}.hero:before{background:linear-gradient(90deg,rgba(8,9,11,.96),rgba(8,9,11,.72)),linear-gradient(0deg,#08090b 0%,transparent 45%)}.hero-inner{padding-top:135px}.services{grid-template-columns:repeat(2,1fr);gap:24px 0;margin-top:60px}.service{padding:0 16px 0 0;border-right:0}.service:nth-child(even){padding-left:18px;border-left:1px solid rgba(255,255,255,.25)}.service h3{font-size:11px}.service p{font-size:12px}.corner-note{display:none}.cards{grid-template-columns:1fr}.aboutgrid,.contact{grid-template-columns:1fr;gap:35px}.cta{padding:30px;align-items:flex-start;flex-direction:column}section.content{padding:70px 0}.foot{flex-direction:column}}
+@media(max-width:480px){.navbtn{letter-spacing:.03em;padding:10px}.hero{min-height:920px}.kicker{font-size:10px;letter-spacing:.18em}h1{font-size:43px}.intro{font-size:15px}.btn{font-size:11px;padding:15px 18px;letter-spacing:.07em}.services{margin-top:48px}.service-icon{font-size:23px}.service h3{line-height:1.4}.card{padding:24px}form{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="#inicio" aria-label="Stier Capital início"><img class="logo" src="stier-logo.png" alt="Stier Capital"></a>
+<nav class="navlinks"><a href="#inicio">Início</a><a href="#sobre">Sobre nós</a><a href="#solucoes">Consórcios⌄</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+<a class="navbtn" href="#contato">☏ Fazer uma simulação</a>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="hero-inner">
+<div class="kicker">Planejamento&nbsp; • &nbsp;Consórcio&nbsp; • &nbsp;Patrimônio</div>
+<h1>Seu próximo patrimônio <span>começa com planejamento.</span></h1>
+<p class="intro">Soluções em consórcio para quem deseja conquistar bens, planejar o futuro e transformar objetivos em realidade.</p>
+<a class="btn" href="#contato">☏ Solicitar uma simulação <span aria-hidden="true">→</span></a>
+<div class="services">
+<div class="service"><div class="service-icon">⌂</div><h3>Consórcio imobiliário</h3><p>Conquiste o imóvel dos seus sonhos, construa ou invista.</p></div>
+<div class="service"><div class="service-icon">▱</div><h3>Consórcio de veículos</h3><p>Seu próximo carro, com planejamento e condições claras.</p></div>
+<div class="service"><div class="service-icon">▥</div><h3>Capital de giro</h3><p>Consulte as soluções disponíveis para seus objetivos empresariais.</p></div>
+<div class="service"><div class="service-icon">↗</div><h3>Planejamento patrimonial</h3><p>Construa um plano para você, sua família e seus próximos passos.</p></div>
+</div></div><div class="corner-note">Mais que consórcio,<br>é planejamento.</div></section>
+
+<section class="content" id="solucoes"><div class="wrap">
+<div class="eyebrow">Soluções Stier Capital</div><h2>Estratégia para cada conquista.</h2><p class="section-lead">Cada objetivo pede um plano diferente. Conheça as possibilidades e converse com a nossa equipe para entender as condições aplicáveis ao seu perfil.</p>
+<div class="cards">
+<article class="card"><div class="index">01 / IMÓVEIS</div><h3>Consórcio imobiliário</h3><p>Planeje a aquisição de casa, apartamento, terreno ou outros objetivos imobiliários conforme as regras do grupo.</p><a class="textlink" href="#contato" data-product="Consórcio imobiliário">Solicitar informações ↗</a></article>
+<article class="card"><div class="index">02 / VEÍCULOS</div><h3>Consórcio de veículos</h3><p>Avalie alternativas para planejar a compra de um carro, moto ou outro veículo elegível.</p><a class="textlink" href="#contato" data-product="Consórcio de veículos">Solicitar informações ↗</a></article>
+<article class="card"><div class="index">03 / PATRIMÔNIO</div><h3>Planejamento patrimonial</h3><p>Organize seus objetivos de médio e longo prazo com orientação e análise das condições do plano.</p><a class="textlink" href="#contato" data-product="Planejamento patrimonial">Conversar com a equipe ↗</a></article>
+</div></div></section>
+
+<section class="content about" id="sobre"><div class="wrap aboutgrid">
+<div><div class="eyebrow">Sobre a Stier Capital</div><h2>Clareza para planejar. Segurança para decidir.</h2><p class="section-lead">Nosso atendimento é focado em entender seu objetivo, apresentar as opções disponíveis e ajudar você a avaliar as condições antes de tomar uma decisão.</p><a class="btn" href="#contato">Falar com a equipe →</a></div>
+<div class="steps"><div class="step"><span>01</span><div><b>Entendemos seu objetivo</b><p>Você conta o que deseja conquistar e qual faixa de crédito considera.</p></div></div><div class="step"><span>02</span><div><b>Apresentamos as opções</b><p>Você pode avaliar prazos, parcelas, taxas e regras do produto.</p></div></div><div class="step"><span>03</span><div><b>Você decide com informação</b><p>A contratação acontece somente após análise e aceite das condições formais.</p></div></div></div>
+</div></section>
+
+<section class="content" id="duvidas"><div class="wrap"><div class="eyebrow">Transparência</div><h2>Dúvidas frequentes</h2><div class="faq">
+<details><summary>Consórcio é financiamento?</summary><p>Não. Consórcio é uma modalidade de autofinanciamento em grupo, com regras e custos próprios. Compare as alternativas antes de contratar.</p></details>
+<details><summary>A contemplação é garantida ou imediata?</summary><p>Não. A contemplação ocorre conforme as regras do grupo, por sorteio ou lance. Não existe garantia de contemplação imediata.</p></details>
+<details><summary>Como sei o valor real das parcelas e taxas?</summary><p>Os valores dependem do plano e do contrato. Solicite uma simulação atualizada e confira taxas, reajustes, prazos e obrigações na documentação oficial.</p></details>
+<details><summary>Solicitar uma simulação me obriga a contratar?</summary><p>Não. O contato serve para esclarecer dúvidas e conhecer opções. A decisão de contratar é sua.</p></details>
+</div></div></section>
+
+<section class="content" id="contato"><div class="wrap contact">
+<div><div class="eyebrow">Atendimento personalizado</div><h2>Seu próximo passo começa com uma conversa.</h2><p>Conte um pouco sobre o seu objetivo. Vamos abrir uma conversa no WhatsApp com a sua solicitação pronta.</p><p class="fine">Não envie senhas, dados bancários ou documentos pessoais por este formulário.</p></div>
+<form id="leadForm"><label>Seu nome<input name="nome" autocomplete="name" placeholder="Como podemos te chamar?" required></label>
+<label>O que você deseja planejar?<select name="objetivo" id="objetivo" required><option value="">Selecione uma opção</option><option>Consórcio imobiliário</option><option>Consórcio de veículos</option><option>Capital de giro / objetivo empresarial</option><option>Planejamento patrimonial</option><option>Quero conhecer as opções</option></select></label>
+<label>Faixa de crédito desejada<select name="credito"><option>Ainda não sei</option><option>Até R$ 100 mil</option><option>R$ 100 mil a R$ 300 mil</option><option>R$ 300 mil a R$ 500 mil</option><option>Acima de R$ 500 mil</option></select></label>
+<label>Mensagem (opcional)<textarea name="mensagem" rows="3" placeholder="Conte um pouco sobre seu objetivo"></textarea></label>
+<button class="btn" type="submit">Continuar no WhatsApp ↗</button><p class="fine">A simulação não é uma oferta definitiva nem garantia de contemplação. As condições finais devem ser confirmadas com a administradora responsável.</p></form>
+</div></section>
+</main>
+<footer><div class="wrap foot"><strong style="color:#e6c38a;letter-spacing:.15em">STIER CAPITAL</strong><p>Atendimento comercial em soluções de consórcio. A administradora responsável, as condições, taxas, reajustes e obrigações devem ser confirmados na documentação oficial e no contrato. A contemplação não é imediata nem garantida.</p><span>© <span id="year"></span> Stier Capital</span></div></footer>
+<script>
+const WHATSAPP_NUMBER="5541995098801";
+document.getElementById("year").textContent=new Date().getFullYear();
+document.querySelectorAll("[data-product]").forEach(a=>a.addEventListener("click",()=>{const s=document.getElementById("objetivo");for(const o of s.options){if(o.text===a.dataset.product)s.value=o.text;}}));
+document.getElementById("leadForm").addEventListener("submit",function(e){e.preventDefault();const d=new FormData(this);const msg=`Olá! Meu nome é ${d.get("nome")}. Quero informações sobre: ${d.get("objetivo")}. Faixa de crédito: ${d.get("credito")}. ${d.get("mensagem")?"Mensagem: "+d.get("mensagem"):""}`;window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg),"_blank","noopener,noreferrer");});
+</script>
+</body></html>
